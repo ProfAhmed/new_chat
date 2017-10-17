@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pro.ahmed.navigationdrawertest.sayhiFragment.SayHi">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sayHitabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f977dfd1"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#fff"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabTextColor="#fff" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sayHiViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

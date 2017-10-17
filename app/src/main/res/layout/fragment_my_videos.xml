@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pro.ahmed.navigationdrawertest.myVideosFragment.MyVideosFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/myVideosTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f977dfd1"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#fff"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabTextColor="#fff" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myVideosTabsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myVideosTabs"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabUploadVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"
+        app:backgroundTint="#f977dfd1" />
+
+
+</RelativeLayout>

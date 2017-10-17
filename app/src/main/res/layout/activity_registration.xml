@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.pro.ahmed.navigationdrawertest.RegistrationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:title="Register"
+        app:elevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarRegister"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#f977dfd1"
+            android:titleTextColor="#fff"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:id="@+id/EtEmailRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#fff"
+        android:textStyle="italic"
+        app:backgroundTint="#ffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarRegister"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:id="@+id/EtPasswordRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#fff"
+        android:textStyle="italic"
+        app:backgroundTint="#ffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtEmailRegistration"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:id="@+id/EtConfirmPasswordRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="ConfirmPassword"
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#fff"
+        android:textStyle="italic"
+        app:backgroundTint="#ffff"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtPasswordRegistration"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <EditText
+        android:id="@+id/EtUsernameRegistration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColorHint="#fff"
+        android:textStyle="italic"
+        app:backgroundTint="#ffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtConfirmPasswordRegistration"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtUsernameRegistration">
+
+        <ImageView
+            android:id="@+id/ImVCaptchaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/EtCaptchaAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|fill"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:hint="Please Enter Answer here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHint="#fff"
+            app:backgroundTint="#ffff" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstrainLayoutAvatar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Avatar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageViewAvatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_add_a_photo_white_24dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstrainLayoutAvatar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstraintLayoutSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/TvSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="I am"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/TvSex"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/RadioBTNSexMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_radio_button"
+                android:text="Male"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#fff" />
+
+            <RadioButton
+                android:id="@+id/RadioBTNSexFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_radio_button"
+                android:text="Female"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#fff" />
+        </RadioGroup>
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayoutSex"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstraintLayoutBirthday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/constraint_layout_style_pressed"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BirthDay"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TvBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:text="You must be at least 18 years old"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#8f8d8d"
+            app:layout_constraintLeft_toLeftOf="@+id/textView2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayoutBirthday"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/BTnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_style"
+        android:text="register"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstraintLayoutBirthday"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+</android.support.constraint.ConstraintLayout>
